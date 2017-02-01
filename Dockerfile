@@ -19,4 +19,5 @@ COPY config.json tilestream/
 
 EXPOSE 8888
 
-CMD node index.js start --config config.json
+CMD node index.js start --host "$TILES_HOST" --tiles "/opt/tiles"
+
