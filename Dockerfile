@@ -19,4 +19,4 @@ COPY config.json tilestream/
 
 EXPOSE 8888
 
-CMD node index.js start --host "tile.appkka.pl" --tiles "/opt/tiles"
+CMD node index.js start --config config.json
